@@ -1,0 +1,44 @@
+BreezyCV vCard HTML Template Updates
+
+==============================================================
+v1.0
+==============================================================
+
+Initial release
+
+==============================================================
+v1.1 (11 April 2020)
+==============================================================
+
+- New feature: Added a new subpage - Home
+- New feature: Animated background added
+- New feature: Added section "Fun Facts"
+- New feature: Added section "Pricing"
+- Added block "Copyrights"
+
+Modified files:
+1. index.html
+2. css/main.css
+3. js/main.js
+
+==============================================================
+v1.2 (16 April 2020)
+==============================================================
+
+- New feature: Dark version was added
+- Improved: Styles
+- Improved: JS
+
+Modified files:
+1. index.html
+2. blog-post-1.html
+3. css/main.css
+4. js/main.js
+5. js/animating.js
+
+
+==============================================================
+v1.3 (15 September 2020)
+==============================================================
+
+- New Feature: New layout style - Full Width.

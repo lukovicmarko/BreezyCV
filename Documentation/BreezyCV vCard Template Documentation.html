@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>BreezyCV - Resume / CV / vCard Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, material, portfolio" />
+    <meta name="author" content="lmtheme" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title">
+              <h1>BreezyCV - Resume / CV / vCard Template v1.3.</h1> 
+              <h4>Complete Documentation</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Thank you very much for purchasing from LMPixels!</h3>
+            <p>If you have any issue or question that this document does not cover, you can contact us via email <a href="mailto:help@lmpixels.com">help@lmpixels.com</a>.</p>
+
+            <h2>Table of Contents</h2>
+            <ol>
+              <li><a href="#installing">Template Installation</a></li>
+              <li><a href="#html_structure">HTML Structure</a></li>
+              <li><a href="#css_structure">CSS Files and Structure</a></li>
+              <li><a href="#scripts">Scripts</a></li>
+              <li><a href="#php_integration">PHP Integration (Contact Form)</a></li>
+              <li><a href="#fonts">Fonts</a></li>
+              <li><a href="#credits">Credits</a></li>
+              <li><a href="#customization">Customization</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ol>
+
+
+            <h2 id="installing">Template Installation</h2>
+            <p>You can view this template in any web browser from your computer, mobile device. Because the files are written in HTML, you do not need an internet connection in order to display or edit the template.</p>
+            <p>All of the HTML files are given a descriptive name to make it easier to distingish what each file will display.</p>
+            <h3 style="margin-bottom:10px;">Upload to The Server</h3>
+            <ol>
+              <li>It's important to understand that you must either have your own server space or use someone elses. The server space can be purchased at many different places around the internet. You need somewhere to put the files that you purchased so others can find them online.</li>
+              <li>Select several files with the extension labeled <em>.html</em>. This is where all your content will. In addition to .html you should see a file labeled <em>.css</em>. <em>.css</em> files are going to be the files that will tell the .html how to to be styled. CSS is simply a way to take text, images, and other elements and change the look of them. It's very important to keep the <em>.css</em> file with the HTML or the HTML will not look how the design is meant to look. Along with the HTML and CSS files, you will also have three additional folders to upload: <em>images, js and php</em>.</li>
+              <li>Start your FTP client (I persoanlly use Filezila which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</li>
+              <li>Locate the domain folder you wish to upload your template files to on your server. You are going to want to click and drag every file that you have labeled <em>.html, .css, .js, .php</em> into your FTP client.</li>
+              <li>Once the files are done uploading, you can try access your website via browser.</li>
+            </ol>
+
+            <h2 id="html_structure">HTML Structure</h2>
+
+            <p>This site template has a Responsive and Mobile-Friendly layout based on Bootstrap Boilerplate.</p>
+
+            <h3>HTML files</h3>
+            <ol>
+              <li><strong>index.html</strong> - main HTML file of this site template.
+                <p>The main structure of this site is wrapped in a <em>'subpages'</em> div. Inside of that div you will find sections of the site.</p>
+                <div><img src="images/html_structure.jpg" alt="Html Structure"></div>
+              </li>
+
+              <li><strong>portfolio-1.html</strong> - HTML file with Portfolio page content.</li>
+
+              <li><strong>blog-post-1.html</strong> - HTML file with Blog post page content.</li>
+            </ol>
+
+
+            <h2 id="css_structure">CSS Files and Structure</h2>
+
+            <p>We are using one main CSS file <em>(main.css)</em> in this template which you are free to modify depending on the customization you require.</p>
+
+            <p>If you would like to edit the color, font, or style of any elements, you would do the following in <em>css/main.css</em> :</p>
+
+            <div><img src="images/main_css.jpg" alt="main.css"></div>
+
+            <p>If you would like to edit a specific section or page of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+            <p>There are also five additional style sheets that I do not recommend changing. Those style sheets reside in the <em>'css'</em> folder. The 5 style sheets are:</p>
+
+            <ul class="square">
+              <li><strong>reset.css</strong> - CSS file that makes browsers render all elements more consistently and in line with modern standards.</li>
+              <li><strong>bootstrap-grid.min.css</strong> - Minified version of <strong>Bootstrap Grid System</strong>.</li>
+              <li><strong>animations.css</strong> - CSS3 animation sets for subpages changer.</li>
+              <li><strong>perfect-scrollbar.css</strong> -  Custom scrollbar styles. Perfect Scrollbar Plugin.</li>
+              <li><strong>owl.carousel.css</strong> - The main stylesheet for Carousels (Testimonials block on About me subpage &amp; Portfolio details page).</li>
+              <li><strong>magnific-popup.css</strong> -  The main stylesheet for styling the lightbox.</li>
+            </ul>
+
+            <p>These files are included in the <strong>'head'</strong> of <strong>index.html</strong> and <strong>blog-post-1.html</strong>:</p>
+            <div><img src="images/head_css.jpg" alt=""></div>
+
+            <h2 id="scripts">Scripts</h2>
+            <p>This template uses several scripts. If you're a developer, you will find this particularly useful.</p>
+
+            <ul class="circle">
+              <li><strong>jquery-2.1.3.min.js</strong> (version 2.1.3) - used by the various JS files as a library.</li>
+              <li><strong>imagesloaded.pkgd.min.js</strong> - <a href="http://imagesloaded.desandro.com/">Detect when images have been loaded.</a></li>
+              <li><strong>perfect-scrollbar.min.js</strong> - <a href="https://github.com/mdbootstrap/perfect-scrollbar">Minimalistic but perfect custom scrollbar plugin.</a></li>
+              <li><strong>jquery.shuffle.min.js</strong> - <a href="https://vestride.github.io/Shuffle/">Categorize, sort, and filter a responsive grid of items.</a></li>
+              <li><strong>jquery.magnific-popup.min.js</strong> - <a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.</a></li>
+              <li><strong>masonry.pkgd.min.js</strong> - <a href="http://masonry.desandro.com/">Cascading grid layout library</a></li>
+              <li><strong>modernizr.custom.js</strong> - <a href="http://modernizr.com/">Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser</a></li>
+              <li><strong>owl.carousel.min.js</strong> - <a href="https://owlcarousel2.github.io/OwlCarousel2/">Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</a></li>
+              <li><strong>animating.js</strong> - Page transitions and ajax loaded pages.</li>
+              <li><strong>validator.js</strong> - <a href="https://github.com/1000hz/bootstrap-validator">Contact form validator.</a></li>
+              <li><strong>main.js</strong> - jQuery Plugins Initialisation, mobile menu, page loading animation.</li>
+            </ul>
+
+            <h2 id="php_integration">PHP Integration (Contact Form)</h2>
+            <p>This template also use the PHP engine for activate the contact form. <strong>Important:</strong> For the functioning of the contact form on <strong>your hosting</strong> should be <strong>PHP</strong>.</p>
+            <p>Please replace the email address with your email address, this address will receive messages from the contact form in the <em>/contact_form/contact_form.php</em> file.</p>
+            <div><img src="images/contact_form.jpg" alt=""></div>
+
+            <h2 id="fonts">Fonts</h2>
+            <ul class="circle">         
+              <li>Helvetica, Sans-serif (both should be on your system as standard fonts)</li> 
+              <li>Google Fonts <a href="http://www.google.com/webfonts/specimen/Poppins">Poppins</a>.</li>
+              <li><a href="https://fontawesome.com/icons?d=gallery&m=free">Font Awesome Free version 5.12.1 </a>(The complete set of 1,557 icons).</li>
+              <li><a href="https://linearicons.com/free">Linearicons Free Font</a>.</li>
+            </ul>
+
+            <h2 id="credits">Credits</h2>
+
+            <p>Images (Just on live preview, not included in download package):
+            <ul>
+               <li><a href="https://pixabay.com/">https://pixabay.com/</a></li>
+            </ul>
+
+            <p>Videos</p>
+            <ul>
+              <li><a href="https://vimeo.com/channels/staffpicks" target="_blank">https://vimeo.com/channels/staffpicks</a></li>
+            </ul>
+
+
+            <h2 id="customization">Customization</h2>
+            <ol>
+              <li><a href="#custom_files-editing">About files editing</a></li>
+              <li><a href="#custom_main-title">Main title</a></li>
+              <li><a href="#custom_subpage-title">Subpage title</a></li>
+              <li><a href="#custom_new-subpage">Adding new subpage</a></li>
+              <li><a href="#custom_animation-effects">Subpages animation effects. Random animations mode</a></li>
+              <li><a href="#custom_resume-subpage">Edit resume subpage</a></li>
+              <li><a href="#custom_services-subpage">Edit services subpage</a></li>
+              <li><a href="#custom_portfolio-subpage">Edit portfolio subpage</a></li>
+              <li><a href="#custom_video-embeding">YouTube and Vimeo Video Embedding</a></li>
+              <li><a href="#custom_recaptcha">Google Recaptcha V2 options</a></li>
+              <li><a href="#custom_maps">Google Map</a></li>
+            </ol>
+
+            <h3 id="custom_files-editing">1. About files editing</h3>
+            <p>For editing files I recommend you use <a href="https://sublimetext.com/2" target="_blank">Sublime Text 2</a> or similar program. Convenient following functions: syntax highlighting, find and replace function (to accelerate editing), etc.</p>
+
+            <hr>
+
+            <h3 id="custom_main-title">2. Main title and photo</h3>
+            <ol>
+              <li>Open index.html or blog-post-1.html.</li>
+              <li>Go to lines with <pre>
+&lt;div class="header-content"&gt;
+  &lt;div class="header-photo"&gt;
+    &lt;img src="img/main_photo.jpg" alt="Alex Smith"&gt;
+  &lt;/div&gt;
+  &lt;div class="header-titles"&gt;
+    &lt;h2>Alex Smith&lt;/h2&gt;
+    &lt;h4>Web Designer&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre></li>
+              <li>Change text.</li>
+              <li>Save file.</li>
+            </ol>
+
+
+
+            <h3 id="custom_subpage-title">3. Subpage title</h3>
+            For example, the subpage "About me":
+            <ol>
+              <li>Open index.html.</li>
+              <li>Go to <em>'section'</em> that you need edit. In our example is <pre>&lt;section data-id="resume" class="animated-section"&gt;</pre>
+              <li>Find <em>'div'</em> with <em>class="page-title"</em>.</li>
+              <li>Go to lines with <pre>
+&lt;div class="page-title"&gt;
+  &lt;h2>Resume&lt;/h2&gt;
+&lt;/div&gt;
+</pre>
+              <li>Change text value.</li>
+              <li>Save file.</li>
+            </ol>
+
+            <hr>
+
+            <h3 id="custom_new-subpage">4. Adding new subpage</h3>
+            <ol>
+              <li>Open index.html.</li>
+              <li>Go to <em>'div'</em> with <em>class="animated-sections"</em>. Subpage (Section) is <em>'section'</em> with HTML tags: <pre>
+&lt;section data-id="resume" class="animated-section"&gt;
+  &lt;div class="page-title"&gt;
+    &lt;h2&gt;Resume&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div class="section-content"&gt;
+
+    &lt;div class="row"&gt;
+      Our columns with content.
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+                <p>In our demo 5 sections:</p>
+                <ol>
+                  <li><strong>About Me (start)</strong> &lt;section data-id="about-me" class="animated-section"&gt;</li>
+                  <li><strong>Resume</strong> &lt;section data-id="resume" class="animated-section"&gt;</li>
+                  <li><strong>Portfolio</strong> &lt;section data-id="portfolio" class="animated-section"&gt;</li>
+                  <li><strong>Blog</strong> &lt;section data-id="blog" class="animated-section"&gt;</li>
+                  <li><strong>Contact</strong> &lt;section data-id="contact" class="animated-section"&gt;</li>
+                </ol>
+
+                <p>As you can see in the sections change attribute <em>data-id</em>. These values we need for the operation of the site navigation (main menu and the browser buttons "go back" and "go forward").</p>
+              </li>
+              <li>For example, add the section "Extra". After existing sections do make a new one with <em>data-id="extra"</em>.</li>
+              <li>We get a section: <pre>
+&lt;section data-id="extra" class="animated-section"&gt;
+  &lt;div class="page-title"&gt;
+    &lt;h2&gt;Extra&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div class="section-content"&gt;
+
+    &lt;div class="row"&gt;
+      Our columns with content.
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;</pre></li>
+              <li>Now we need to add a new item to the <strong>main menu</strong>. The main menu has the following structure: <pre>
+&lt;ul class="main-menu"&gt;
+  &lt;li class="active"&gt;
+    &lt;a href="#about-me" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-home">&lt;/span&gt;
+      &lt;span class="link-text">About Me&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="#resume" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-graduation-hat">&lt;/span&gt;
+      &lt;span class="link-text">Resume&lt;/span&gt;
+    &lt;/a>
+  &lt;/li>
+  &lt;li>
+    &lt;a href="#portfolio" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-briefcase">&lt;/span&gt;
+      &lt;span class="link-text">Portfolio&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt; href="#blog" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-book">&lt;/span&gt;
+      &lt;span class="link-text">Blog&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="#contact" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-envelope">&lt;/span&gt;
+      &lt;span class="link-text">Contact&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href="#extra" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-envelope">&lt;/span&gt;
+      &lt;span class="link-text">Extra&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>Where you can add<em>data-animation="*"</em>, is the number of animation effect. More details about the animation effects you can read <a href="#custom_animation-effects">here</a>.</p>
+</li>
+              <li>Add a new item: <pre>
+  &lt;li&gt;
+    &lt;a href="#extra" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-envelope">&lt;/span&gt;
+      &lt;span class="link-text">Extra&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;</pre></li>
+              <li>Save file.</li>
+            </ol>
+
+            <hr>
+
+            <h3 id="custom_animation-effects">5. Subpages animation effects. Random animations mode.</h3>
+            <h4>5.1. Subpages animation effects</h4>
+            <p>You can select any of the <strong>67</strong> variants of the animation. To do this, you need to specify the attribute <em>'data-animations'</em> with the appropriate amount of animation for the respective menu item. Example:</p>
+<pre>
+  &lt;li&gt;
+    &lt;a href="#extra" class="nav-anim" data-animation="17"&gt;
+      &lt;span class="menu-icon lnr lnr-envelope">&lt;/span&gt;
+      &lt;span class="link-text">Extra&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;</pre>
+            <p>List of animation options:</p>
+<pre>1:
+out effect: move to Left;
+in effect: move from Right;
+
+2:
+out effect: move to Right;
+in effect: move from Left;
+
+3:
+out effect: move to Top;
+in effect: move from Bottom;
+
+4:
+out effect: move to Bottom;
+in effect: move from Top;
+
+5:
+out effect: fade;
+in effect: move from Right on top;
+
+6:
+out effect: fade;
+in effect: move from Left on top;
+
+7:
+out effect: fade;
+in effect: move from Bottom on top;
+
+8:
+out effect: fade;
+in effect: move from Top on top;
+
+9:
+out effect: move to Left Fade;
+in effect: move from Right Fade;
+
+10:
+out effect: move to Right Fade;
+in effect: move from Left Fade;
+
+11:
+out effect: move to Top Fade;
+in effect: move from Bottom Fade;
+
+12:
+out effect: move to Bottom Fade;
+in effect: move from Top Fade;
+
+13:
+out effect: move to Left Easing on top;
+in effect: move from Right;
+
+14:
+out effect: move to Right Easing on top;
+in effect: move from Left;
+
+15:
+out effect: move to Top Easing on top;
+in effect: move from Bottom;
+
+16:
+out effect: move to Bottom Easing on top;
+in effect: move from Top;
+
+17:
+out effect: scale Down;
+in effect: move from Right on top;
+
+18:
+out effect: scale Down;
+in effect: move from Left on top;
+
+19:
+out effect: scale Down;
+in effect: move from Bottom on top;
+
+20:
+out effect: scale Down;
+in effect: move from Top on top;
+
+21:
+out effect: scale Down;
+in effect: scale Up Down delay300;
+
+22:
+out effect: scale Down Up;
+in effect: scale Up delay300;
+
+23:
+out effect: move to Left on top;
+in effect: scale Up;
+
+24:
+out effect: move to Right on top;
+in effect: scale Up;
+
+25:
+out effect: move to Top on top;
+in effect: scale Up;
+
+26:
+out effect: move to Bottom on top;
+in effect: scale Up;
+
+27:
+out effect: scale Down Center;
+in effect: scale Up Center delay400;
+
+28:
+out effect: rotate Right Side First;
+in effect: move from Right delay200 on top;
+
+29:
+out effect: rotate Left Side First;
+in effect: move from Left delay200 on top;
+
+30:
+out effect: rotate Top Side First;
+in effect: move from Top delay200 on top;
+
+31:
+out effect: rotate Bottom Side First;
+in effect: move from Bottom delay200 on top;
+
+32:
+out effect: flip Out Right;
+in effect: flip In Left delay500;
+
+33:
+out effect: flip Out Left;
+in effect: flip In Right delay500;
+
+34:
+out effect: flip Out Top;
+in effect: flip In Bottom delay500;
+
+35:
+out effect: flip Out Bottom;
+in effect: flip In Top delay500;
+
+36:
+out effect: rotate Fall on top;
+in effect: scale Up;
+
+37:
+out effect: rotate Out Newspaper;
+in effect: rotate In Newspaper delay500;
+
+38:
+out effect: rotate Push Left;
+in effect: move from Right;
+
+39:
+out effect: rotate Push Right;
+in effect: move from Left;
+
+40:
+out effect: rotate Push Top;
+in effect: move from Bottom;
+
+41:
+out effect: rotate Push Bottom;
+in effect: move from Top;
+
+42:
+out effect: rotate Push Left;
+in effect: rotate Pull Right delay180;
+
+43:
+out effect: rotate Push Right;
+in effect: rotate Pull Left delay180;
+
+44:
+out effect: rotate Push Top;
+in effect: rotate Pull Bottom delay180;
+
+45:
+out effect: rotate Push Bottom;
+in effect: rotate Pull Top delay180;
+
+46:
+out effect: rotate Fold Left;
+in effect: move from Right Fade;
+
+47:
+out effect: rotate Fold Right;
+in effect: move from Left Fade;
+
+48:
+out effect: rotate Fold Top;
+in effect: move from Bottom Fade;
+
+49:
+out effect: rotate Fold Bottom;
+in effect: move from Top Fade;
+
+50:
+out effect: move to Right Fade;
+in effect: rotate Unfold Left;
+
+51:
+out effect: move to Left Fade;
+in effect: rotate Unfold Right;
+
+52:
+out effect: move to Bottom Fade;
+in effect: rotate Unfold Top;
+
+53:
+out effect: move to Top Fade;
+in effect: rotate Unfold Bottom;
+
+54:
+out effect: rotate Room Left Out on top;
+in effect: rotate Room Left In;
+
+55:
+out effect: rotate Room Right Out on top;
+in effect: rotate Room Right In;
+
+56:
+out effect: rotate Room Top Out on top;
+in effect: rotate Room Top In;
+
+57:
+out effect: rotate Room Bottom Out on top;
+in effect: rotate Room Bottom In;
+
+58:
+out effect: rotate Cube Left Out on top;
+in effect: rotate Cube Left In;
+
+59:
+out effect: rotate Cube Right Out on top;
+in effect: rotate Cube Right In;
+
+60:
+out effect: rotate Cube Top Out on top;
+in effect: rotate Cube Top In;
+
+61:
+out effect: rotate Cube Bottom Out on top;
+in effect: rotate Cube Bottom In;
+
+62:
+out effect: rotate Carousel Left Out on top;
+in effect: rotate Carousel Left In;
+
+63:
+out effect: rotate Carousel Right Out on top;
+in effect: rotate CarouselRight In;
+
+64:
+out effect: rotate Carousel Top Out on top;
+in effect: rotate Carousel Top In;
+
+65:
+out effect: rotate Carousel Bottom Out on top;
+in effect: rotate Carousel Bottom In;
+
+66:
+out effect: rotate Sides Out;
+in effect: rotate Sides In delay200;
+
+67:
+out effect: rotate Slide Out;
+in effect: rotate Slide In;
+</pre>
+            <h4>5.2. Random animations mode</h4>
+            <p>To activate a random animation mode, you need to remove the attribute <em>'data-animation'</em> from the menu item. Example:</p>
+<pre>
+  &lt;li&gt;
+    &lt;a href="#resume" class="nav-anim"&gt;
+      &lt;span class="menu-icon lnr lnr-graduation-hat">&lt;/span&gt;
+      &lt;span class="link-text">Resume&lt;/span&gt;
+    &lt;/a>
+  &lt;/li></pre>
+            <p>In this case, random animation will be applied, one of 67.</p>
+
+            <hr>
+
+            <h3 id="custom_resume-subpage">6. Edit resume subpage</h3>
+
+            <h4>6.1. Skills</h4>
+            <p>Skill block:</p>
+<pre>
+&lt;!-- Skill 1 --&gt;
+&lt;div class="skill clearfix"&gt;
+  &lt;h4>Web Design&lt;/h4&gt;
+  &lt;div class="skill-value">95%&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="skill-container skill-1"&gt;
+  &lt;div class="skill-percentage">&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Skill 1 --&gt;</pre>
+
+            <p>The value for the <em>&lt;div class="skill-percentage skill-1"&gt;</em> set in the <em>css/main.css file</em>:</p>
+<pre>
+.skills-second-style .skill-container.skill-1 .skill-percentage {
+  width: 95%;
+}</pre>
+
+            <hr>
+
+            <h3 id="custom_services-subpage">7. Edit services subpage</h3>
+
+            <h4>7.1. Services</h4>
+            <ol>
+              <li>Open index.html file.</li>
+              <li>Find <em>'div'</em> with <em>'class="info-list-w-icon"</em></li>
+              <li>Edit text in the following <em>'div'</em>:<pre>
+&lt;div class="info-list-w-icon"&gt;
+  &lt;div class="info-block-w-icon"&gt;
+    &lt;div class="ci-icon"&gt;
+      &lt;i class="lnr lnr-store">&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="ci-text"&gt;
+      &lt;h4&gt;Ecommerce&lt;/h4&gt;
+      &lt;p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.>&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="info-block-w-icon"&gt;
+    &lt;div class="ci-icon"&gt;
+      &lt;i class="lnr lnr-laptop-phone">&lt;/i&gt;
+    &lt;/div&gt;>&lt;div class="ci-text"&gt;
+      &lt;h4>Web Design>&lt;/h4&gt;
+      &lt;p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.>&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                You can choose an icon <pre>&lt;i class="lnr lnr-store">&lt;/i&gt;</pre> from the following fonts: <a href="https://fontawesome.com/icons?d=gallery&m=free">Font Awesome Free version 5.12.1 </a>(The complete set of 1,341 icons), <a href="https://linearicons.com/free">Linearicons Free Font</a></a>.
+              </li>
+              
+              <li>Save file.</li>
+
+              <li>If you want to use an icon image instead of a font icon, you need to do the following:</li>
+
+              <li>Replace this code:<pre>
+&lt;div class="ci-icon"&gt;
+  &lt;i class="lnr lnr-laptop-phone">&lt;/i&gt;
+&lt;/div&gt;</pre>
+              </li>
+
+              <li>With this code:<pre>
+&lt;div class="ci-icon"&gt;
+  &lt;img src="img/service/web_design_icon.png" alt="Service"&gt;
+&lt;/div&gt;</pre>
+              Where you need to replace the <em>'src'</em> to the path to your image (icon).
+              </li>
+            </ol>
+
+            <hr>
+
+            <h3 id="custom_portfolio-subpage">8. Edit portfolio subpage</h3>
+            <p>The structure of the "Portfolio" subpage:</p>
+<pre>&lt;!-- Portfolio Content --&gt;
+&lt;div class="portfolio-content"&gt;
+
+  &lt;ul class="portfolio-filters"&gt;
+    &lt;li class="active"&gt;
+      &lt;a class="filter btn btn-sm btn-link" data-group="category_all"&gt;All&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="filter btn btn-sm btn-link" data-group="category_media"&gt;Media&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="filter btn btn-sm btn-link" data-group="category_mockups"&gt;Mockups&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="filter btn btn-sm btn-link" data-group="category_soundcloud"&gt;SoundCloud&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos"&gt;Vimeo Videos&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class="filter btn btn-sm btn-link" data-group="category_youtube-videos"&gt;YouTube Videos&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- Portfolio Grid --&gt;
+  &lt;div class="portfolio-grid three-columns"&gt;
+    
+    &lt;figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'&gt;
+      &lt;div class="portfolio-item-img"&gt;
+        &lt;img src="images/portfolio/1.jpg" alt="SoundCloud Audio" title="" /&gt;
+        &lt;a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true" class="lightbox mfp-iframe" title="SoundCloud Audio"&gt;&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;i class="fa fa-volume-up"&gt;&lt;/i&gt;
+      &lt;h4 class="name"&gt;SoundCloud Audio&lt;/h4&gt;
+      &lt;span class="category"&gt;SoundCloud&lt;/span&gt;
+    &lt;/figure&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!-- /Portfolio Grid --&gt;
+&lt;/div&gt;
+&lt;!-- /Portfolio Content --&gt;</pre>
+            <p>Each item in the portfolio grid should be wrapped in the HTML tag &lt;figure&gt;...&lt;/figure&gt;</p>
+            <p>You can add two types of content:</p>
+              <ol>
+                <li>Page loaded via Ajax (page containing the image, carousel, video, etc., and a full description). <em>portfolio-1.html</em> a file content.</li>
+                <li>Content displayed via LightBox (Full image or video and caption).</li>
+              </ol>
+
+            <h4>8.1. Portfolio details page loaded via Ajax</h4>
+            <p>Link will have a class of <em>"ajax-page-load"</em> and the href attribute with a path to the HTML page (portfolio-1.html etc.):</p>
+<pre>
+&lt;figure class="item standard" data-groups='["category_all", "category_media"]'&gt;
+  &lt;div class="portfolio-item-img"&gt;
+    &lt;img src="images/portfolio/2.jpg" alt="Media Project 2" title="" /&gt;
+    &lt;a href="portfolio-1.html" class="ajax-page-load"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;i class="far fa-file-alt"&gt;&lt;/i&gt;
+  &lt;h4 class="name"&gt;Media Project 2&lt;/h4&gt;
+  &lt;span class="category"&gt;Media&lt;/span&gt;
+&lt;/figure&gt;</pre>
+
+            <div class="alert alert-warning">
+              <p><strong>Note :</strong> To test this Ajax loading you need to place the HTML files on a web server. You can set up a local web server on your PC by installing WampServer or XAMPP. You must open the portfolio page (example portfolio-1.html) file using "http://" since Ajax makes HTTP requests.</p>
+
+              <p>Ajax request can be made only to the files that exist on the same web server that servers the page from which the Ajax request is sent, not to external or remote servers for security reasons. This is called same-origin policy.</p>
+            </div>
+
+            <h4>8.2. Content displayed via LightBox</h4>
+            <ol>
+              <li>To display the <strong>image</strong> link will have a class of <em>"lightbox"</em> and the href attribute with a path to the image: <pre>
+&lt;figure class="item lbimage" data-groups='["category_all", "category_mockups"]'&gt;
+  &lt;div class="portfolio-item-img"&gt;
+    &lt;img src="images/portfolio/5.jpg" alt="Mockup Design 1" title="" /&gt;
+    &lt;a class="lightbox" title="Mockup Design 1" href="https://lmpixels.com/wp/kerge-wp/wp-content/uploads/2018/04/11.jpg"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;i class="far fa-image"&gt;&lt;/i&gt;
+  &lt;h4 class="name"&gt;Mockup Design 1&lt;/h4&gt;
+  &lt;span class="category"&gt;Mockups&lt;/span&gt;
+&lt;/figure&gt;</pre>
+              </li>
+
+              <li>To display the <strong>video</strong> link will have a classes of <em>"lightbox mfp-iframe"</em> and the href attribute with a URL to the video:<pre>
+&lt;figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'&gt;
+  &lt;div class="portfolio-item-img"&gt;
+    &lt;img src="images/portfolio/6.jpg" alt="YouTube Video 1" title="" /&gt;
+    &lt;a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;i class="fas fa-video"&gt;&lt;/i&gt;
+  &lt;h4 class="name"&gt;YouTube Video 1&lt;/h4&gt;
+  &lt;span class="category"&gt;YouTube Videos&lt;/span&gt;
+&lt;/figure&gt;</pre>
+              </li>
+            </ol>
+
+            <hr>
+
+            <h3 id="custom_video-embeding">9. YouTube and Vimeo Video Embedding</h3>
+            <p>Link format for embedding videos:</p>
+            <p><strong>YouTube</strong>: https://www.youtube.com/embed/id. Example: https://www.youtube.com/embed/w5tWYmIOWGk</p>
+            <p><strong>Vimeo</strong>: https://player.vimeo.com/video/id. Example: https://player.vimeo.com/video/97102654</p>
+
+            <div class="alert alert-warning">
+              <p><strong>Note :</strong> To test video loading you need to place the HTML files on a web server. You can set up a local web server on your PC by installing WampServer or XAMPP.</p>
+            </div>
+
+            <hr>
+
+            <h3 id="custom_recaptcha">10. Google Recaptcha V2 options</h3>
+            <p>By default, the template uses global Google Recaptcha V2 keys, if you want to use your keys, then you can create new keys <a href="https://www.google.com/recaptcha/admin" target="_blank">here</a>.</p>
+            <p>1. Replace site key in the index.html:</p>
+            <img src="images/site-key.png" alt="Google Recaptcha V2 Site Key">
+            <p>2. Replace Site secret key in the contact_form/contact_form.php:</p>
+            <img src="images/site-secret-key.png" alt="Google Recaptcha V2 Site Secret Key">
+
+            <hr>
+
+            <h3 id="custom_maps">11. Google Map</h3>
+            <h4>Change of address</h4>
+            <ol>
+              <li>Open js/main.js file</li>
+              <li>Go to lines:
+<pre>
+//Google Maps
+$("#map").googleMap({
+    zoom: 16 // Google Map ZOOM. You can change this value
+});
+$("#map").addMarker({
+    address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
+});</pre> and replace "S601 Townsend Street, San Francisco, California, USA" with your address.</li>
+              <li>Save file.</li>
+            </ol>
+
+            <h4>API key</h4>
+            <p>If Google Maps does not work, then you need to create a key for Google Maps and add it to the index.html file. To create the key, go <a href="https://developers.google.com/maps/documentation/javascript/get-api-key?hl=ru" target="_blank">here</a>.</p>
+
+            <p>After you have created the key, add it to the index.html, for this:</p>
+            <ol>
+              <li>Open index.html file</li>
+              <li>Go to line - &lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"&gt;&lt;/script&gt; and remove it</li>
+              <li>Find this line - &lt;!--&lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"&gt;&lt;/script&gt;--&gt; and replace it with &lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"&gt;&lt;/script&gt;. Instead of "YOUR-API-KEY" paste the code that you received on Google's website.</li>
+              <li>Save file.</li>
+            </ol>
+
+            <h4>Removing Google Maps</h4>
+            <p>To remove Google Maps from the page, do the following:</p>
+            <ol>
+              <li>Open index.html.file</li>
+              <li>Go to line:<pre>&lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"&gt;&lt;/script&gt;</pre> and remove it.</li>
+              <li>Go to line:<pre>&lt;!--&lt;script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"&gt;&lt;/script&gt;--&gt;</pre> and remove it.</li>
+              <li>Go to line:<pre>&lt;script type="text/javascript" src="js/jquery.googlemap.js"&gt;&lt;/script&gt;</pre> and remove it.</li>
+              <li>Go to line:<pre>&lt;div id="map" class="map"&gt;&lt;/div&gt;</pre> and remove it.</li>
+              <li>Save index.html file</li>
+              <li>Open js/main.js file</li>
+              <li>Go to lines:
+<pre>
+ //Google Maps
+$("#map").googleMap({
+    zoom: 16 // Google Map ZOOM. You can change this value
+});
+$("#map").addMarker({
+    address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
+});</pre> and delete them.</li>
+              <li>Save file.</li>
+            </ol>
+
+            <hr>
+            <h2 id="faq">FAQ</h2>
+            <ul>
+              <li><p><strong>Q:</strong> I work with the template on the local computer without using a server or local server and the following problem arose - the portfolio Media projects are not opened.</p></li>
+              <li><p><strong>A:</strong> These portfolio projects are opened with the help of Ajax technology, for correct operation of Ajax you need to use a server or a local server, i.e. the page of the template should be opened through the protocol <em>https://</em> or <em>https://</em>, and not throught the protocol <em>file://</em>. These are the rules of browsers. But there is one exception, it's the Mozilla Firefox browser.</p></li>
+            </ul>
+            <hr>
+
+            <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template.</p>
+
+          </div>
+        </div>
+    </div>
+    <footer class="container bottom copyright">
+      <div class="row">
+        <div class="col-md-12">
+         <p>Copyright © 2020 <a href="http://themeforest.net/user/lmpixels" target="_blank">lmpixels</a>, All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
